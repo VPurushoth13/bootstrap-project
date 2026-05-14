@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        .banner {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .products {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: orange;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mobile Shop</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="banner">
+    Latest Smartphones
+</div>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Mobile">
+        <h3>iPhone 15</h3>
+        <p class="price">$999</p>
+        <a href="#" class="btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Mobile">
+        <h3>Samsung Galaxy S23</h3>
+        <p class="price">$899</p>
+        <a href="#" class="btn">Buy Now</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Mobile">
+        <h3>OnePlus 12</h3>
+        <p class="price">$749</p>
+        <a href="#" class="btn">Buy Now</a>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Mobile Shop | All Rights Reserved
+</footer>
+
+</body>
+</html>
